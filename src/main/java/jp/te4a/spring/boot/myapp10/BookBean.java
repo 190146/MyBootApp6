@@ -10,14 +10,16 @@ import javax.persistence.*;
 
 // table class
 @Entity
-@Table(name = "books")
+@Table(name = "book")
 @Data
 
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookBean {
+	// データベースのID列を使用して主キー値を生成する
+	// デフォルトのシーケンスを参照すると存在しないのでエラーとなる。
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id ;
 	@Column(nullable = false)
 	private String title;
