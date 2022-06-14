@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp11;
+package jp.te4a.spring.boot.myapp12;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +16,7 @@ public class BookForm {
   @NotNull
   @Size(min=3)
   private String title;
+  @Writter(ok="東北タロウ")
   @Size(min=3, max=20)
   private String writter;
   private String publisher;
