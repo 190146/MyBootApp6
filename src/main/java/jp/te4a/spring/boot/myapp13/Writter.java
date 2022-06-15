@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.myapp12;
+package jp.te4a.spring.boot.myapp13;
 
 import javax.validation.Payload;
 import java.lang.annotation.Documented;
